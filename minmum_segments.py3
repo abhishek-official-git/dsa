@@ -9,4 +9,3 @@ while(c<len(p)):
 	while(c<len(p) and p[c]<=key):
 		c=c+1
 print(segment)
-
