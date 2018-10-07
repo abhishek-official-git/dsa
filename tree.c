@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
-struct Node
+struct Node 
 {
   int data;
   struct Node *next;
 };  
 typedef struct Node node;
-struct btnode
+struct btnode //structure for binary tree node
 {
-  struct btnode * left;
+  struct btnode * left; //pointer left child
   int data;
-  struct btnode * right;
+  struct btnode * right;  //pointer to right child
 };
 typedef struct btnode btnode;
 
-node* pre=NULL,*in=NULL;
+node* pre=NULL,*in=NULL;  //set preorder and inorder as NULL
 void insert_at_end(node* start,int data);
 
 node* create_ll(int total_no)
