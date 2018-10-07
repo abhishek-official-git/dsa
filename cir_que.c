@@ -4,15 +4,13 @@ void enque(int *arr,int x);
 int deque(int *arr);
 int main(void)
 {
-	int ch=0;
-	int m=0;
+	int ch=0,m=0;
+	do
+	{
 	printf("Enter maxsize\n");
 	scanf("%d",&max);
-	while(max<=0)
-	{
-		printf("Enter maxsize\n");
-		scanf("%d",&max);
 	}
+	while(max<=0);
 	int *arr=(int *)malloc(sizeof(int)*max);
 	while(ch!=-1){
 	switch(ch)
