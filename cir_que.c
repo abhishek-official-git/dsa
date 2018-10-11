@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <stdlib.h>
 int front=-1,rear=-1,max=0;
 void enque(int *arr,int x);
 int deque(int *arr);
