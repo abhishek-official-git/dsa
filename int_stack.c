@@ -31,8 +31,9 @@ stack* pop(stack * t)
 		return t;
 	}
 }
- stack* push(stack *t,double x)
+stack* push(stack *t,double x)
  {
+    //cretes a new node, adds the data in it and return it
  	stack* temp=(stack*)malloc(sizeof(stack));
  	temp->data=x;
  	temp->next=t;
